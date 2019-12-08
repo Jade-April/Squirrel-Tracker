@@ -1,3 +1,5 @@
+<img src='https://raw.githubusercontent.com/Jade-April/Project-Group-16/master/top.jpg' alt="Italian Trulli">
+
 <h5>Project-Group-16</h5>
 <h5>UNIs: [ jw3845, hl3304 ]</h5>
 
