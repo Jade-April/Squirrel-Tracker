@@ -1,7 +1,11 @@
 from django.shortcuts import render
 from .models import Squirrel
 import random
+from django.http import HttpResponse
+from .forms import SquirrelForm
+from django.contrib import messages
 from django.db.models import Avg,Max,Min,Count
+
 
 def general_state(request):
     run=list(Squirrel.objects.values('Running').annotate(num_count=Count('Running')))
@@ -47,4 +51,36 @@ def get_map(request):
             'myItems':myitems,
             }
     return render(request,'squirrel/address.html',context)
+
+def add(request):
+    if request.method=='POST':
+        form=SquirrelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(f'/squirrel/sightings/')
+    else:
+        form=SquirrelForm()
+    title='create new sightings'
+    messages.success(request,'Now you can add a new squirrel')
+    context={
+            'title':title,
+            'form':form,
+            }
+    return render(request,'squirrel/add.html',context)
+
+def update(request,unique_squirrel_id):
+    to_update=Squirrel.objects.get(Unique_Squirrel_ID=unique_squirrel_id)
+    if request.method == 'POST':
+        form = SquirrelForm(request.POST, instance=to_update)
+        if form.is_valid():
+           form.save()
+           return redirect(f'/squirrel/sightings')
+    else:
+        form = SquirrelForm(instance=to_update)
+    messages.success(request,'Now you can update this squirrel')
+    context={
+            'form':form,
+            }
+    return render(request,'squirrel/update.html',context)
+
 # Create your views here.
