@@ -6,4 +6,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sightings/',views.list_sightings),
     path('map/',views.get_map),
+    path('sightings/add',views.add),
 ]
