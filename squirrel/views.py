@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from .models import Squirrel
 import random
+from django.http import HttpResponse
+from .forms import SquirrelForm
+from django.contrib import messages
 
 def list_sightings(request):
     squirrel=Squirrel.objects.all()
