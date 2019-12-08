@@ -4,6 +4,26 @@ import random
 from django.http import HttpResponse
 from .forms import SquirrelForm
 from django.contrib import messages
+from django.db.models import Avg,Max,Min,Count
+
+
+def general_state(request):
+    run=list(Squirrel.objects.values('Running').annotate(num_count=Count('Running')))
+    shift=list(Squirrel.objects.values('Shift').annotate(num_count=Count('Shift')))
+    primary_fur_color=list(Squirrel.objects.values('Primary_Fur_Color').annotate(num_count=Count('Primary_Fur_Color')))
+    latitude=Squirrel.objects.aggregate(range_max=Max('Latitude'),range_min=Min('Latitude'))
+    longitude=Squirrel.objects.aggregate(range_max=Max('Longitude'),range_min=Min('Longitude'))
+    print(latitude.items())
+    title='general state'
+    context={
+            'title':title,
+            'run':run,
+            'shift':shift,
+            'primary_fur_color':primary_fur_color,
+            'latitude':latitude,
+            'longitude':longitude,
+            }
+    return render(request,'squirrel/stat.html',context)
 
 def list_sightings(request):
     squirrel=Squirrel.objects.all()
