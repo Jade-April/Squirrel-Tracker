@@ -28,4 +28,22 @@ def get_map(request):
             'myItems':myitems,
             }
     return render(request,'squirrel/address.html',context)
+
+def add(request):
+    if request.method=='POST':
+        form=SquirrelForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(f'/squirrel/sightings/')
+    else:
+        form=SquirrelForm()
+    title='create new sightings'
+    messages.success(request,'Now you can add a new squirrel')
+    context={
+            'title':title,
+            'form':form,
+            }
+    return render(request,'squirrel/add.html',context)
+
+
 # Create your views here.
