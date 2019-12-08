@@ -1,0 +1,84 @@
+{% extends 'squirrel/base.html' %}
+{% block content %}
+
+<br>
+<br>
+<h2 style="margin-left:500px;"> RUNNING DISCRIPTION </h2>
+<table border="2" bordercolor="black" width="300" cellspacing="0" cellpadding="5"  style="margin-left:500px;" >
+	<tr>
+		<th style="height: 100px; background-color: rgba(255,0,0,0.1);">Categories</th>
+		<th style="height: 100px; background-color: rgba(255,0,0,0.1);">Count</th>
+	</tr>
+    	{% for category in run %}
+    	<tr>
+		<td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.Running }}</td>
+        	<td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.num_count }}</td>
+    	</tr>
+    	{% endfor %}
+</table>
+
+<br>
+<br>
+<h2 style="margin-left:500px;"> SHIFT DISCRIPTION </h2>
+<table border="2" bordercolor="black" width="300" cellspacing="0" cellpadding="5" style="margin-left:500px;" >
+        <tr>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);">Categories</th>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);">Count</th>
+        </tr>
+        {% for category in shift %}
+        <tr>
+                <td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.Shift }}</td>
+                <td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.num_count }}</td>
+        </tr>
+        {% endfor %}
+</table>
+
+<br>
+<br>
+<h2 style="margin-left:500px;"> PRIMARY FUR COLOR DISCRIPTION </h2>
+<table border="2" bordercolor="black" width="300" cellspacing="0" cellpadding="5" style="margin-left:500px;" >
+        <tr>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);">Categories</th>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);">Count</th>
+        </tr>
+        {% for category in primary_fur_color %}
+        <tr>
+                <td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.Primary_Fur_Color }}</td>
+                <td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.num_count }}</td>
+        </tr>
+        {% endfor %}
+</table>
+
+
+<br>
+<br>
+<h2 style="margin-left:500px;"> LATITUDE DISCRIPTION </h2>
+<table border="2" bordercolor="black" width="300" cellspacing="0" cellpadding="5" style="margin-left:500px;" >
+        <tr>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);"></th>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);">MIN OR MAX</th>
+        </tr>
+        {% for category in latitude.items %}
+        <tr>
+                <td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.0 }}</td>
+        	<td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.1 }}</td>
+	</tr>
+        {% endfor %}
+</table>
+
+<br>
+<br>
+<h2 style="margin-left:500px;"> LONGITUDE DISCRIPTION </h2>
+<table border="2" bordercolor="black" width="300" cellspacing="0" cellpadding="5" style="margin-left:500px;" >
+        <tr>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);"></th>
+                <th style="height: 100px; background-color: rgba(255,0,0,0.1);">MIN OR MAX</th>
+        </tr>
+        {% for category in longitude.items %}
+        <tr>
+                <td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.0 }}</td>
+                <td class="align-middle" style="width: 120px; background-color: rgba(0,0,255,.1)">{{ category.1 }}</td>
+        </tr>
+        {% endfor %}
+</table>
+{% endblock %}
