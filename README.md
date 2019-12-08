@@ -20,7 +20,7 @@ Here are the things that Squirrel Tracker can achieve:
 <li>Giving a statistical description of all squirrel sightings, including running, shift, primary fur color, latitude and longitude. Users can find these five statistical table at squirrel/sightings/stats
 
 <h2>Where to get it?</h2>
-this application can be found at xxxxx
+This application can be found at https://tools-for-analytics-254001.appspot.com.
 
 <h2>Dependencies</h2>
 See the <a href='https://github.com/Jade-April/Project-Group-16/blob/master/requirements.txt'>requirement.txt</a> for minimum supported versions of required dependencies.
