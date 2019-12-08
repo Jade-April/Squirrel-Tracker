@@ -1,0 +1,14 @@
+{% extends 'squirrel/base.html' %}
+{% block content %}
+<br>
+<h3 style="margin-left:300px">
+	list of links of all squirrel sightings to add or update data
+</h3>
+<br>
+<ul class="list-group">
+	<a href='/squirrel/sightings/add' class='btn btn-primary'>Add</a>
+	{% for item in link_list %}
+	<li class="list-group-item" style="color:rgba(0,0,255,0.6);font-size:16px;padding-left:500px"> Squirrel ID: &nbsp;&nbsp;{{ item }} &nbsp;  <a href="/squirrel/sightings/{{item}}" style="font-size:16px" class='btn btn-success'>Update </a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
