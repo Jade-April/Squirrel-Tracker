@@ -9,15 +9,15 @@ Squirrel Tracker is an application that is designed for Mr. Hosencratz, which im
 <h2>Main features</h2>
 Here are the things that Squirrel Tracker can achieve:
 <p>
-<li>Visually showing the location of all squirrel sightings in the central park by an OpenStreets map. Users can browse the map at squirrel/map
+<li>Visually showing the location of all squirrel sightings in the central park by an OpenStreets map. Users can browse the map at https://tools-for-analytics-254001.appspot.com/squirrel/map.
 <p>
-<li>Displaying unique ids of all squirrel sightings by using a list. Users can look through this list at squirrel/sightings
+<li>Displaying unique ids of all squirrel sightings by using a list. Users can look through this list at https://tools-for-analytics-254001.appspot.com/squirrel/sightings.
 <p>
-<li>Permitting users to update the information of a particular squirrel sighting. Users can use this feature both by clicking the “Update” bottoms shown besides the unique id of each squirrel sighting in the list, and directly entering the update page by adding the unique id of a squirrel sighting behind the link squirrel/sightings/<unique_squirrel_id>
+<li>Permitting users to update the information of a particular squirrel sighting. Users can use this feature both by clicking the “Update” bottoms shown besides the unique id of each squirrel sighting in the list, and directly entering the update page by adding the unique id of a squirrel sighting behind the link https://tools-for-analytics-254001.appspot.com/squirrel/sightings/<unique_squirrel_id>.
 <p>
 <li>Allowing users to add a new squirrel sighting into the database. Users can use this feature both by clicking the “Add” bottom shown on the top of the list, and directly entering the add page at squirrel/sightings/add. For all detailed fields for a squirrel sighting, the latitude, longitude, unique squirrel id, shift and date cannot be stayed blank.
 <p>
-<li>Giving a statistical description of all squirrel sightings, including running, shift, primary fur color, latitude and longitude. Users can find these five statistical table at squirrel/sightings/stats
+<li>Giving a statistical description of all squirrel sightings, including running, shift, primary fur color, latitude and longitude. Users can find these five statistical table at https://tools-for-analytics-254001.appspot.com/squirrel/sightings/stats.
 
 <h2>Where to get it?</h2>
 This application can be found at https://tools-for-analytics-254001.appspot.com.
