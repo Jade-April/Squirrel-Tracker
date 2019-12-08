@@ -23,4 +23,4 @@ Here are the things that Squirrel Tracker can achieve:
 This application can be found at https://tools-for-analytics-254001.appspot.com.
 
 <h2>Dependencies</h2>
-See the <a href='https://github.com/Jade-April/Project-Group-16/blob/master/requirements.txt'>requirement.txt</a> for minimum supported versions of required dependencies.
+See the <a href='https://github.com/Jade-April/Project-Group-16/blob/master/requirements.txt'>requirements.txt</a> for minimum supported versions of required dependencies.
