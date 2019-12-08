@@ -15,7 +15,7 @@ Here are the things that Squirrel Tracker can achieve:
 <p>
 <li>Permitting users to update the information of a particular squirrel sighting. Users can use this feature both by clicking the “Update” bottoms shown besides the unique id of each squirrel sighting in the list, and directly entering the update page by adding the unique id of a squirrel sighting behind the link https://tools-for-analytics-254001.appspot.com/squirrel/sightings/<unique_squirrel_id>.
 <p>
-<li>Allowing users to add a new squirrel sighting into the database. Users can use this feature both by clicking the “Add” bottom shown on the top of the list, and directly entering the add page at squirrel/sightings/add. For all detailed fields for a squirrel sighting, the latitude, longitude, unique squirrel id, shift and date cannot be stayed blank.
+<li>Allowing users to add a new squirrel sighting into the database. Users can use this feature both by clicking the “Add” bottom shown on the top of the list, and directly entering the add page at https://tools-for-analytics-254001.appspot.com/squirrel/sightings/add. For all detailed fields for a squirrel sighting, the latitude, longitude, unique squirrel id, shift and date cannot be stayed blank.
 <p>
 <li>Giving a statistical description of all squirrel sightings, including running, shift, primary fur color, latitude and longitude. Users can find these five statistical table at https://tools-for-analytics-254001.appspot.com/squirrel/sightings/stats.
 
