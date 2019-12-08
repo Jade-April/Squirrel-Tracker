@@ -48,5 +48,19 @@ def add(request):
             }
     return render(request,'squirrel/add.html',context)
 
+def update(request,unique_squirrel_id):
+    to_update=Squirrel.objects.get(Unique_Squirrel_ID=unique_squirrel_id)
+    if request.method == 'POST':
+        form = SquirrelForm(request.POST, instance=to_update)
+        if form.is_valid():
+           form.save()
+           return redirect(f'/squirrel/sightings')
+    else:
+        form = SquirrelForm(instance=to_update)
+    messages.success(request,'Now you can update this squirrel')
+    context={
+            'form':form,
+            }
+    return render(request,'squirrel/update.html',context)
 
 # Create your views here.
