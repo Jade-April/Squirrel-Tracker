@@ -4,7 +4,7 @@
 <h5>UNIs: [ jw3845, hl3304 ]</h5>
 
 <h2>What is it?</h2>
-Squirrel Tracker is an application that is designed for Mr. Hosencratz, which imports the 2018 Central Park Squirrel Census data and allow users to view, update and add squirrels data.
+<p>Squirrel Tracker is an application that is designed for Mr. Hosencratz, which imports the 2018 Central Park Squirrel Census data and allow users to view, update and add squirrels data.
 
 <h2>Main features</h2>
 Here are the things that Squirrel Tracker can achieve:
@@ -20,7 +20,8 @@ Here are the things that Squirrel Tracker can achieve:
 <li>Giving a statistical description of all squirrel sightings, including running, shift, primary fur color, latitude and longitude. Users can find these five statistical table at https://tools-for-analytics-254001.appspot.com/squirrel/sightings/stats.
 
 <h2>Where to get it?</h2>
-This application can be found at https://tools-for-analytics-254001.appspot.com.
+<p>This application can be found at https://tools-for-analytics-254001.appspot.com.
 
 <h2>Dependencies</h2>
-See the <a href='https://github.com/Jade-April/Project-Group-16/blob/master/requirements.txt'>requirements.txt</a> for minimum supported versions of required dependencies.
+<p>To use this application, you can just click the links above and no dependency is needed. </p>
+<p>However, if you want to run this application in your local ip address, see the <a href='https://github.com/Jade-April/Project-Group-16/blob/master/requirements.txt'>requirements.txt</a> for minimum supported versions of required dependencies.
