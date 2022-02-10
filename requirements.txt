@@ -1,2 +1,2 @@
-Django==2.2.7
+Django==2.2.27
 Pandas==0.25.2
